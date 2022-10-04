@@ -32,7 +32,7 @@ steps:
 - task: gulp@1
   displayName: 'Run gulp tasks'
 
-- script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+- script: 'echo "$(mslearn-tailspin-spacegame-web), $(115), $(20221003.1)" > buildinfo.txt'
   displayName: 'Write build info'
   workingDirectory: Tailspin.SpaceGame.Web/wwwroot
 
