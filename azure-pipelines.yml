@@ -35,14 +35,11 @@ stages:
       inputs:
         verbose: false
 
-<<<<<<< HEAD
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
       displayName: 'Compile Sass assets'
-=======
 - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
   displayName: 'Write build info'
   workingDirectory: $(wwwrootDir)
->>>>>>> 47d4d41f9575a4cd9c5f364563c289425307a736
 
     - task: gulp@1
       displayName: 'Run gulp tasks'
